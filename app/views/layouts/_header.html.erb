@@ -1,0 +1,102 @@
+
+		<a href="#dat-menu" class="ot-menu-toggle"><i class="fa fa-bars"></i>Toggle Menu</a>
+		<!-- BEGIN .boxed -->
+		<div class="boxed active">
+			
+			<!-- BEGIN .header -->
+			<header class="header willfix">
+				
+				<!-- BEGIN .wrapper -->
+				<div class="wrapper">
+
+					<div class="header-left">
+						<div class="header-logo">
+							<a href="<%= root_path %>" class="otanimation" data-anim-object=".header-logo a.otanimation img, .header-logo a.otanimation h1" data-anim-in="flipOutX" data-anim-out="bounceIn"><%= image_tag "logo1.png" %></a>
+							<strong data-anim-in="fadeOutUpBig" data-anim-out="bounceIn"><i class="fa fa-home"></i> Homepage</strong>
+						</div>
+						<div class="header-socials">
+						    <a href="https://www.facebook.com/Techoshdotcom"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/TechoshDotCom"><i class="fa fa-twitter"></i></a>
+							<a href="https://plus.google.com/108171077689451362434"><i class="fa fa-google-plus"></i></a>
+							<a href="http://www.youtube.com/channel/UCyY2rcdxJCG73xOrh0iXO8g"><i class="fa fa-youtube"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+
+					<div class="header-right">
+						<nav class="main-menu">
+							<ul class="load-responsive" rel="Main Menu">
+								<li><a href="#"><span>BackEnd <i>Programming</i></span></a>
+									<ul class="sub-menu">
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">C Programming</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(2)) %>">C++ Programming</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(3)) %>">C# Programming</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Java</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">PHP</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Python</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Ruby</a></li>
+									</ul>
+								</li></li>
+								<li><a href="#"><span>FrontEnd<i>Programming</i></span></a>
+									<ul class="sub-menu">
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">HTML - CSS</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">JavaScript</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">jQuery</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>DataBase<i>Programming</i></span></a>
+									<ul class="sub-menu">
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">MySql</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Sql Server</a></li>
+										
+									</ul>
+								</li>
+										<li><a href="#"><span>FrameWork<i>Programming</i></span></a>
+									<ul class="sub-menu">
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Ruby On Rails</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Django</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Zend Framework</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Yii Framework</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">CodeIgniter</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><span>CMS<i>Programming</i></span></a>
+									<ul class="sub-menu">
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">WordPress</a></li>
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Magento</a></li>
+										
+									</ul>
+								</li>
+								<li><a href="#"><span>Mobile<i>App Development</i></span></a>
+									<ul class="sub-menu">
+										<li><a href="<%= lecture_path(Tutorial.find_by_id(1)) %>">Android</a></li>
+										<li><a href="#">iOS</a></li>
+										<li><a href="#">PhoneGap</a></li>
+										
+									</ul>
+								</li>
+							</ul>
+							<div class="search-header">
+								<form action="get">
+									<input type="search" value="" placeholder="Search.." autocomplete="off" required="required" name="s" />
+									<input type="submit" value="search" />
+								</form>
+							</div>
+						</nav>
+						<nav class="under-menu">
+							<ul class="load-responsive" rel="Sub Menu">
+								<li><a href="#">Interview Questions & Answers</a></li>
+								<li><a href="#">Placements Papers</a></li>
+								<li><a href="#">Blogs</a></li>
+								<li><a href="<%= contact_path %>">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="clear-float"></div>
+					
+				<!-- END .wrapper -->
+				</div>
+				
+			<!-- END .header -->
+			</header>
